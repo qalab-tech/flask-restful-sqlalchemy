@@ -1,4 +1,4 @@
-# Flask-RESTfull CRUD with SQLAlchemy
+# Flask-RESTful CRUD with SQLAlchemy
 # For HEROKU Deployment
 
 
