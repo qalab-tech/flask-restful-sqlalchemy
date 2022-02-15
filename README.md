@@ -1,4 +1,4 @@
-# Flask RESTfull CRUD API with SQLALCHEMY
+# Flask RESTful CRUD API with SQLALCHEMY
 
 ## Installation
 

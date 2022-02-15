@@ -18,9 +18,16 @@ class Item(Resource):
     @jwt_required()
     def get(self, name):
         item = ItemModel.find_by_name(name)
+
         if item:
             return item.json()
-        return {'message': 'Item not found'}, 404
+        elif item == None:
+            return {'message': 'Item not found'}, 404
+        else:
+            return {'message': 'Someting Wrong!!!'}, 500
+        # if item:
+        #     return item.json()
+        # return {'message': 'Item not found'}, 404
     
     
 
