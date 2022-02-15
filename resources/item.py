@@ -21,10 +21,7 @@ class Item(Resource):
 
         if item:
             return item.json()
-        elif item == None:
-            return {'message': 'Item not found'}, 404
-        else:
-            return {'message': 'Someting Wrong!!!'}, 500
+        return {'message': 'Someting Wrong!!!'}, 500
         # if item:
         #     return item.json()
         # return {'message': 'Item not found'}, 404
