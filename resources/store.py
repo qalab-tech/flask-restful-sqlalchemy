@@ -1,6 +1,7 @@
 from flask_restful import Resource
-from sqlalchemy import delete
+
 from models.store import StoreModel
+
 
 class Store(Resource):
     def get(self, name):
